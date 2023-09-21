@@ -14,6 +14,11 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
         Debug.LogError("BaseCounter.Interact() overriding error !");
     }
 
+    public virtual void InteractAlternate(Player player)
+    {
+        Debug.LogError("BaseCounter.InteractAlternate() overriding error !");
+    }
+
     public Transform GetKitchenObjectFollowTransform()
     {
         return counterTopPoint;
