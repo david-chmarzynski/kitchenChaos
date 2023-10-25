@@ -16,3 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 161ccc0d8a67f43989294e9ebf010a6e, type: 2}
   - {fileID: 11400000, guid: 9d629bd96e545b440a46bb7b2498ce72, type: 2}
   recipeName: Salad
+  timeToAdd: 7

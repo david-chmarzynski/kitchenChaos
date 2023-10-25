@@ -77,7 +77,10 @@ public class DeliveryManager : MonoBehaviour
                 if(plateContentsMatchesRecipe)
                 {
                     // Player delivered correct recipe
-                    successfulRecipesAmount++; 
+                    successfulRecipesAmount++;
+                    Debug.Log(waitingRecipeSOList[i].recipeName);
+                    Debug.Log(waitingRecipeSOList[i].timeToAdd);
+                    GameManager.Instance.AddGamePlayingTime(waitingRecipeSOList[i]);
                     waitingRecipeSOList.RemoveAt(i);
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);

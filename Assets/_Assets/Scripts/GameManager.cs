@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     private State state;
     private float countDownToStartTimer = 3f;
     private float gamePlayingTimer;
-    private float gamePlayingTimerMax = 30f;
+    private float gamePlayingTimerMax = 60f;
     private bool isGamePaused = false;
 
 
@@ -120,5 +120,20 @@ public class GameManager : MonoBehaviour
             OnGameUnPaused?.Invoke(this, EventArgs.Empty);
         }
         
+    }
+
+    public void AddGamePlayingTime(RecipeSO recipe)
+    {
+        Debug.Log(recipe.timeToAdd);
+        if(IsGamePlaying())
+        {
+            if(gamePlayingTimer + recipe.timeToAdd > 60f)
+            {
+                gamePlayingTimer = 60f;
+            } else
+            {
+                gamePlayingTimer += recipe.timeToAdd;
+            }
+        }
     }
 }
