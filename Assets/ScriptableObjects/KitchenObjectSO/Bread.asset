@@ -15,3 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 8053164995154036539, guid: ff4d7012a2fce3b488d5f572274e15ab, type: 3}
   sprite: {fileID: 21300000, guid: 77b28124b8bda494381c80bd5aa42c22, type: 3}
   objectName: Bread
+  price: 0.5

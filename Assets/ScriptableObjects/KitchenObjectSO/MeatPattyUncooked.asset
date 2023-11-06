@@ -15,3 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 8053164995154036539, guid: 839f8209c5fe6664b9769a03effd079b, type: 3}
   sprite: {fileID: 21300000, guid: aa1bacc24dde76e47b2ec0dd4e82385b, type: 3}
   objectName: Meat Patty Uncooked
+  price: 1

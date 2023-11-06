@@ -79,6 +79,7 @@ public class DeliveryManager : MonoBehaviour
                     // Player delivered correct recipe
                     successfulRecipesAmount++;
                     GameManager.Instance.AddGamePlayingTime(waitingRecipeSOList[i]);
+                    Player.Instance.AddBankAccountAmount(waitingRecipeSOList[i].sellingPrice);
                     waitingRecipeSOList.RemoveAt(i);
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);

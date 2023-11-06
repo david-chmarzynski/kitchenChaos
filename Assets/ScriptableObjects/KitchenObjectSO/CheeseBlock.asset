@@ -15,3 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 8053164995154036539, guid: 2c28766f1ba054f80b7de017d2fe5060, type: 3}
   sprite: {fileID: 21300000, guid: da2d04fe27b94e34ea0b624569b48a6f, type: 3}
   objectName: Cheese Block
+  price: 1

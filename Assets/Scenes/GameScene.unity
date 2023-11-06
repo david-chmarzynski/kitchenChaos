@@ -7834,6 +7834,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   kitchenObjectHoldPoint: {fileID: 766143618}
+  bankAccountAmount: 100
 --- !u!4 &1065490585
 Transform:
   m_ObjectHideFlags: 0
