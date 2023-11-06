@@ -124,7 +124,6 @@ public class GameManager : MonoBehaviour
 
     public void AddGamePlayingTime(RecipeSO recipe)
     {
-        Debug.Log(recipe.timeToAdd);
         if(IsGamePlaying())
         {
             if(gamePlayingTimer + recipe.timeToAdd > 60f)
