@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     public event EventHandler OnPickedSomething;
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
+    public event EventHandler OnBankAccountDeducted;
+    public event EventHandler OnBankAccountAdded;
     public class OnSelectedCounterChangedEventArgs : EventArgs
     {
         public BaseCounter selectedCounter;
@@ -208,10 +210,12 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public void DeductBankAccountAmount(float amount)
     {
         bankAccountAmount -= amount;
+        OnBankAccountDeducted.Invoke(this, EventArgs.Empty);
     }
 
     public void AddBankAccountAmount(float amount)
     {
         bankAccountAmount += amount;
+        OnBankAccountAdded.Invoke(this, EventArgs.Empty);
     }
 }
