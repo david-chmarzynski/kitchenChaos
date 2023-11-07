@@ -38,7 +38,7 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI gamePadInteractAlternateText;
     [SerializeField] private TextMeshProUGUI gamePadPauseText;
 
-    [SerializeField] private Transform pressToRebingKeyTransform;
+    [SerializeField] private Transform pressToRebindKeyTransform;
 
     private Action onCloseButtonAction;
 
@@ -159,12 +159,12 @@ public class OptionsUI : MonoBehaviour
 
     public void ShowPressToRebindKey()
     {
-        pressToRebingKeyTransform.gameObject.SetActive(true);
+        pressToRebindKeyTransform.gameObject.SetActive(true);
     }
 
     public void HidePressToRebindKey()
     {
-        pressToRebingKeyTransform.gameObject.SetActive(false);
+        pressToRebindKeyTransform.gameObject.SetActive(false);
     }
 
     private void RebindBinding(GameInput.Binding binding)

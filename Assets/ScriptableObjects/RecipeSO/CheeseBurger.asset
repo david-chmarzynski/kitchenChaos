@@ -18,3 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aa2df7329274d40c9965592f713be2a7, type: 2}
   recipeName: Cheeseburger
   timeToAdd: 10
+  sellingPrice: 6

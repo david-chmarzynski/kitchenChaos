@@ -14,7 +14,7 @@ public class ContainerCounter : BaseCounter
         {
             // Player is not carrying anything
             KitchenObject.SpawnKitchenObject(kitchenObjectSO, player);
-            
+            player.DeductBankAccountAmount(kitchenObjectSO.price);
             OnPlayerGrabbedObject?.Invoke(this, EventArgs.Empty);
         }
     }

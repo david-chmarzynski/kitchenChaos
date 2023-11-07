@@ -17,3 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd2bae3a1977c9c418ab62acd966c352, type: 2}
   recipeName: Burger
   timeToAdd: 5
+  sellingPrice: 5
